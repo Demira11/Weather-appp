@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/styles.css"/>
+    <link rel="stylesheet" href="images/transparent cloud.png"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+   
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-border">
+        <h1>🌙</h1>
+<form class="search-form" 
+        id="search-form" > 
+          <input 
+        
+          type="text" 
+          placeholder="Enter city..." 
+          autofocus="on"
+          autocomplete="off"
+          id="city-input"
+          class="form-control shadow-sm"/>
+          
+       
+        <div class="search-button" >
+          <input type="submit" value="Search"  />
+        </div>
+      </form>
+      
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img
+                src="images/transparent cloud.png"
+                alt="moon"
+                class="weather-icon float-left"
+              />
+              <br />
+
+              <span class="temperature">66</span> 
+                <a href="#">℉</a>|<a href="#">℃</a>
+<br />
+
+              <ul>
+                <li id="city">
+                  New York, USA
+                </li>
+                <li id="date">
+</li>
+              </ul>
+              <div class="col-6">
+                <ul>
+                  <li class="details">Precipitation: 0%</li>
+                  <li class="details">Humidity: 51%</li>
+                  <li class="details">Wind: 8mph</li>
+                </ul>
+                <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
